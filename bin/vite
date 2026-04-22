@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+VITE_RUBY_SKIP_ASSETS_PRECOMPILE_EXTENSION = true
+load File.expand_path("../config/boot.rb", __dir__)
+require "vite_ruby"
+ViteRuby::CLI.start
