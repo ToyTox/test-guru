@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2026_05_11_204458) do
+ActiveRecord::Schema[7.1].define(version: 2026_05_14_195939) do
   create_table "answers", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "correct", default: false, null: false
     t.text "body", null: false
-    t.integer "question_id"
+    t.integer "question_id", null: false
     t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
