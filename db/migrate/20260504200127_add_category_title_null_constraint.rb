@@ -1,4 +1,4 @@
-class AddCategoryTitlrNullConstraint < ActiveRecord::Migration[7.1]
+class AddCategoryTitleNullConstraint < ActiveRecord::Migration[7.1]
   def up
     change_column_null(:categories, :title, false)
   end
