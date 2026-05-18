@@ -1,9 +1,6 @@
 class AddTestsLevelNullConstraint < ActiveRecord::Migration[7.1]
-  def up
-    change_column_null(:tests, :level, false)
-  end
-  
-  def down
-    change_column_null(:tests, :level, true)
+  def change
+    change_column_default(:tests, :level, from: nil, to: 1)
+    change_column_null(:tests, :level, false, 1)
   end
 end
