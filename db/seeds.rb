@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Categories
+backend = Category.create!(title: "Backend")
+frontend = Category.create!(title: "Frontend")
+html = Category.create!(title: "HTML")
+
 q1 = Question.find_by!(body: "Что такое Ruby?")
 q2 = Question.find_by!(body: "Что такое Rails?")
 q3 = Question.find_by!(body: "Что такое MVC?")
@@ -37,10 +42,4 @@ Answer.create([
   { body: "Тег для создания заголовка", correct: false, question: q4 },
   { body: "CSS-свойство для задания цвета", correct: false, question: q4 },
   { body: "JavaScript-событие клика", correct: false, question: q4 },
-])
-
-Category.create([
-  { title: "Backend" },
-  { title: "Frontend" },
-  { title: "HTML" }
 ])
