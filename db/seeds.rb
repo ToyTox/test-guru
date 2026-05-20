@@ -38,3 +38,9 @@ Answer.create([
   { body: "CSS-свойство для задания цвета", correct: false, question: q4 },
   { body: "JavaScript-событие клика", correct: false, question: q4 },
 ])
+
+Category.create([
+  { title: "Backend" },
+  { title: "Frontend" },
+  { title: "HTML" }
+])
