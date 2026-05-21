@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Users
+User.create([
+  { name: "Тестовый Тест", email: "test@123.com" },
+  { name: "Второй Тест", email: "test2@123.com" }
+])
+
 # Categories
 backend = Category.create!(title: "Backend")
 frontend = Category.create!(title: "Frontend")
