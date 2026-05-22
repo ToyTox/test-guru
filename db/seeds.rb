@@ -17,6 +17,12 @@ backend = Category.create!(title: "Backend")
 frontend = Category.create!(title: "Frontend")
 html = Category.create!(title: "HTML")
 
+# Tests
+ruby_test = Test.create!({ title: "Основы Ruby", level: 1, category: backend })
+rails_test = Test.create!({ title: "Основы Rails", level: 2, category: backend })
+js_test = Test.create!({ title: "Основы JavaScript", level: 2, category: frontend })
+html_test = Test.create!({ title: "Основы HTML", level: 1, category: html })
+
 q1 = Question.find_by!(body: "Что такое Ruby?")
 q2 = Question.find_by!(body: "Что такое Rails?")
 q3 = Question.find_by!(body: "Что такое MVC?")
