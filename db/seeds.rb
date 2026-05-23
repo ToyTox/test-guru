@@ -50,8 +50,8 @@ Answer.create([
   { body: "Метод для работы с массивами", correct: false, question: q4 },
   { body: "Оператор сравнения", correct: false, question: q4 },
 
-  { body: "Атрибут тега, указывающий URL ссылки", correct: true, question: q4 },
-  { body: "Тег для создания заголовка", correct: false, question: q4 },
-  { body: "CSS-свойство для задания цвета", correct: false, question: q4 },
-  { body: "JavaScript-событие клика", correct: false, question: q4 },
+  { body: "Атрибут тега, указывающий URL ссылки", correct: true, question: q5 },
+  { body: "Тег для создания заголовка", correct: false, question: q5 },
+  { body: "CSS-свойство для задания цвета", correct: false, question: q5 },
+  { body: "JavaScript-событие клика", correct: false, question: q5 },
 ])
