@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Users
-User.create([
+User.create!([
   { name: "Тестовый Тест", email: "test@123.com" },
   { name: "Второй Тест", email: "test2@123.com" }
 ])
