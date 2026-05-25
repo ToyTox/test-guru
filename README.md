@@ -8,3 +8,4 @@
 - Question
 - Answer
 - Category
+- TestResult
