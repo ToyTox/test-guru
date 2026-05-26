@@ -23,12 +23,16 @@ rails_test = Test.create!({ title: "Основы Rails", level: 2, category: bac
 js_test = Test.create!({ title: "Основы JavaScript", level: 2, category: frontend })
 html_test = Test.create!({ title: "Основы HTML", level: 1, category: html })
 
-q1 = Question.find_by!(body: "Что такое Ruby?")
-q2 = Question.find_by!(body: "Что такое Rails?")
-q3 = Question.find_by!(body: "Что такое MVC?")
-q4 = Question.find_by!(body: "Что такое var?")
-q5 = Question.find_by!(body: "Что такое href?")
+# Questions
+Question.create!([
+  { body: "Что такое Ruby?" },
+  { body: "Что такое Rails?" },
+  { body: "Что такое MVC?" },
+  { body: "Что такое var?" },
+  { body: "Что такое href?" }
+])
 
+# Answers
 Answer.create([
   { body: "Язык программирования общего назначения", correct: true, question: q1 },
   { body: "Фреймворк для веб-разработки", correct: false, question: q1 },
