@@ -20,16 +20,17 @@ html = Category.create!(title: "HTML")
 # Tests
 ruby_test = Test.create!({ title: "Основы Ruby", level: 1, category: backend })
 rails_test = Test.create!({ title: "Основы Rails", level: 2, category: backend })
+mvc_test = Test.create!({ title: "Продвинутый Rails", level: 2, category: backend })
 js_test = Test.create!({ title: "Основы JavaScript", level: 2, category: frontend })
 html_test = Test.create!({ title: "Основы HTML", level: 1, category: html })
 
 # Questions
 Question.create!([
-  { body: "Что такое Ruby?" },
-  { body: "Что такое Rails?" },
-  { body: "Что такое MVC?" },
-  { body: "Что такое var?" },
-  { body: "Что такое href?" }
+  { body: "Что такое Ruby?", test_id: ruby_test },
+  { body: "Что такое Rails?", test_id: rails_test },
+  { body: "Что такое MVC?", test_id: mvc_test },
+  { body: "Что такое var?", test_id: js_test },
+  { body: "Что такое href?", test_id: html_test }
 ])
 
 # Answers
