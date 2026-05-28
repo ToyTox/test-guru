@@ -34,7 +34,7 @@ Question.create!([
 ])
 
 # Answers
-Answer.create([
+Answer.create!([
   { body: "Язык программирования общего назначения", correct: true, question: q1 },
   { body: "Фреймворк для веб-разработки", correct: false, question: q1 },
   { body: "Система управления базами данных", correct: false, question: q1 },
