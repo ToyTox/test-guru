@@ -25,11 +25,11 @@ js_test = Test.create!({ title: "Основы JavaScript", level: 2, category: f
 html_test = Test.create!({ title: "Основы HTML", level: 1, category: html })
 
 # Questions
-q1 = Question.create!(body: "Что такое Ruby?", test_id: ruby_test)
-q2 = Question.create!(body: "Что такое Rails?", test_id: rails_test)
-q3 = Question.create!(body: "Что такое MVC?", test_id: mvc_test)
-q4 = Question.create!(body: "Что такое var?", test_id: js_test)
-q5 = Question.create!(body: "Что такое href?", test_id: html_test)
+q1 = Question.create!(body: "Что такое Ruby?", test: ruby_test)
+q2 = Question.create!(body: "Что такое Rails?", test: rails_test)
+q3 = Question.create!(body: "Что такое MVC?", test: mvc_test)
+q4 = Question.create!(body: "Что такое var?", test: js_test)
+q5 = Question.create!(body: "Что такое href?", test: html_test)
 
 # Answers
 Answer.create!([
