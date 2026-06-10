@@ -3,5 +3,6 @@ class User < ApplicationRecord
   has_many :test_result
 
   def test_list
+    # ToDo
   end
 end
