@@ -3,6 +3,6 @@ class User < ApplicationRecord
   has_many :test_results
 
   def tests_list(level)
-    self.tests.where(level: level)
+    self.tests.where(level: level).distinct
   end
 end
