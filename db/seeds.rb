@@ -7,10 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Users
-User.create!([
-  { name: "Тестовый Тест", email: "test@123.com" },
-  { name: "Второй Тест", email: "test2@123.com" }
-])
+user1 = User.create!(name: "Тестовый Тест", email: "test@123.com")
+user2 = User.create!(name: "Второй Тест", email: "test2@123.com")
 
 # Categories
 backend = Category.create!(title: "Backend")
@@ -57,4 +55,12 @@ Answer.create!([
   { body: "Тег для создания заголовка", correct: false, question: q5 },
   { body: "CSS-свойство для задания цвета", correct: false, question: q5 },
   { body: "JavaScript-событие клика", correct: false, question: q5 },
+])
+
+# Test Resaults
+TestResult.create!([
+  { user: user1, test: ruby_test },
+  { user: user1, test: rails_test },
+  { user: user2, test: js_test },
+  { user: user2, test: html_test }
 ])
