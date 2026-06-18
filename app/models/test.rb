@@ -3,7 +3,7 @@ class Test < ApplicationRecord
   has_many :questions
   has_many :test_results
   has_many :users
-  has_many :authors
+  has_many :authors # ToDo New class
 
   def self.desc_sorted_tests(category_name)
     joins(:category).where(categories: { title: category_name }).order("tests.title DESC").pluck("tests.title")
