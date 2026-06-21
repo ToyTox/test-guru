@@ -46,7 +46,7 @@ Answer.create!([
   { body: "Атрибут тега, указывающий URL ссылки", correct: true, question: q5 },
   { body: "Тег для создания заголовка", correct: false, question: q5 },
   { body: "CSS-свойство для задания цвета", correct: false, question: q5 },
-  { body: "JavaScript-событие клика", correct: false, question: q5 },
+  { body: "JavaScript-событие клика", correct: false, question: q5 }
 ])
 
 # Test Resaults
