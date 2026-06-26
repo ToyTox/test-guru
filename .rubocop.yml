@@ -3,3 +3,6 @@ inherit_gem:
   rubocop-rails-omakase: rubocop.yml
 
 # Other specialized rules go here
+TargetRubyVersion: '3.3.5'
+Exclude:
+  - db/seeds.rb
