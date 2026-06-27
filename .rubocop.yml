@@ -4,5 +4,3 @@ inherit_gem:
 
 # Other specialized rules go here
 TargetRubyVersion: '3.3.5'
-Exclude:
-  - db/seeds.rb
