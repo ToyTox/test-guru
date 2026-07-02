@@ -2,6 +2,7 @@
 user1 = User.create!(name: "Тестовый Тест", email: "test@123.com")
 user2 = User.create!(name: "Второй Тест", email: "test2@123.com")
 user3 = User.create!(name: "Третий Тест", email: "test3@123.com")
+user4 = User.create!(name: "Четвертый Тест", email: "test4@123.com")
 
 # Categories
 backend = Category.create!(title: "Backend")
@@ -55,6 +56,6 @@ TestResult.create!([
   { user: user1, test: ruby_test },
   { user: user1, test: rails_test },
   { user: user2, test: js_test },
-  { user: user2, test: html_test },
-  { user: user3, test: mvc_test }
+  { user: user3, test: mvc_test },
+  { user: user4, test: html_test }
 ])
