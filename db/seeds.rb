@@ -56,7 +56,5 @@ Answer.create!([
 TestResult.create!([
   { user: user1, test: ruby_test },
   { user: user2, test: js_test },
-  { user: user3, test: mvc_test },
-  { user: user4, test: html_test },
-  { user: user5, test: rails_test }
+  { user: user3, test: mvc_test }
 ])
